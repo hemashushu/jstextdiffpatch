@@ -1,0 +1,30 @@
+{
+  "name": "jstextdiffpatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemashushu/jstextdiffpatch.git"
+  },
+  "keywords": [
+    "utility",
+    "object"
+  ],
+  "author": "Hippo Spark <hippospark@gmail.com> (https://twitter.com/hemashushu)",
+  "license": "SEE LICENSE IN <LICENSE.md>",
+  "bugs": {
+    "url": "https://github.com/hemashushu/jstextdiffpatch/issues"
+  },
+  "homepage": "https://github.com/hemashushu/jstextdiffpatch#readme",
+  "devDependencies": {
+    "jsobjectutils": "github:hemashushu/jsobjectutils",
+    "mocha": "^8.4.0"
+  },
+  "dependencies": {
+    "diff-match-patch": "^1.0.5"
+  }
+}
