@@ -25,6 +25,7 @@
     "mocha": "^8.4.0"
   },
   "dependencies": {
-    "diff-match-patch": "^1.0.5"
+    "diff-match-patch": "^1.0.5",
+    "jstextselection": "github:hemashushu/jstextselection"
   }
 }

@@ -1,8 +1,8 @@
-const ChangeType = require('../src/changetype');
-const CleanupType = require('../src/cleanuptype');
-const LineChange = require('../src/linechange');
-const TextChange = require('../src/textchange');
-const TextDiffPatch = require('../src/textdiffpatch');
+const { ChangeType,
+    CleanupType,
+    LineChange,
+    TextChange,
+    TextDiffPatch } = require('../index');
 
 const assert = require('assert/strict')
 const { ObjectUtils } = require('jsobjectutils');
@@ -101,7 +101,7 @@ describe('TextDiffPatch Test', () => {
             new LineChange(4, ChangeType.added, 'opq2\n')));
     });
 
-    it('Test apply()', ()=>{
+    it('Test apply()', () => {
         let text1 = 'abc d1e2f3 xyz';
         let text2 = 'abc d7e8f9 xyz opq';
         let textChanges1 = TextDiffPatch.diff(text1, text2);
@@ -110,7 +110,7 @@ describe('TextDiffPatch Test', () => {
         assert.equal(r1, text2);
     });
 
-    it('Test reverse()', ()=>{
+    it('Test reverse()', () => {
         let text1 = 'abc d1e2f3 xyz';
         let text2 = 'abc d7e8f9 xyz opq';
         let textChanges1 = TextDiffPatch.diff(text1, text2);
